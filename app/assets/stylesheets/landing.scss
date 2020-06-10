@@ -1,0 +1,82 @@
+// Place all the styles related to the landing controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+
+h1 {
+  width: 750px;
+  margin-top: 200px;
+  margin-left: 60px;
+
+  font-size: 118px;
+  font-weight: bold;
+  line-height: 100.6%;
+}
+
+p.semibold {
+  width: 700px;
+  margin-left: 60px;
+
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 100.6%;
+}
+
+button {
+  display: flex;
+  flex-direction: row;
+
+  margin-left: 60px;
+  padding: 20px 50px;
+
+  color: #FFFFFF;
+  border: none;
+  border-radius: 100px;
+  background: #000000;
+
+  font-family: proxima nova, sans-serif;
+  font-size: 27px;
+  font-weight: bold;
+
+  align-items: center;
+}
+
+button:hover {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+
+  color: #000000;
+  border: 5px solid #000000;
+  background: #FFFFFF;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  box-sizing: content-box;
+  width: 100%;
+  height: 42px;
+  padding: 20px 25px;
+  // background: #FFFFFF;
+
+  align-items: center;
+}
+
+header a {
+  float: right;
+
+  padding-right: 45px;
+
+  font-family: proxima nova, sans-serif;
+  font-size: 22px;
+  font-weight: 600;
+}
+
+div.imac {
+  float: right;
+  overflow: hidden;
+
+  margin-top: -600px;
+}
