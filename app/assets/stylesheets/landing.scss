@@ -1,14 +1,8 @@
-// Place all the styles related to the landing controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: https://sass-lang.com/
+body {
+  overflow-x: hidden;
 
-// body {
-//   display: grid;
-//
-//   grid-template-rows: 1fr 1fr 1fr;
-//   grid-template-columns: 1fr 1fr;
-//   grid-gap: 2vw;
-// }
+  margin: 0;
+}
 
 h1 {
   width: 750px;
@@ -76,25 +70,34 @@ header {
   position: fixed;
   top: 0;
   left: 0;
+  // box-sizing: content-box;
 
-  box-sizing: content-box;
-  width: 100%;
+  width: 100vw;
   height: 42px;
-  padding: 20px 25px;
+  padding-top: 20px;
 
   background: #FFFFFF;
 
   align-items: center;
+  justify-content: space-between;
 }
 
 header a {
   float: right;
 
+  box-sizing: content-box;
   padding-right: 45px;
 
   font-family: proxima nova, sans-serif;
   font-size: 22px;
   font-weight: 600;
+}
+
+div.logo {
+  float: left;
+
+  box-sizing: content-box;
+  padding-left: 25px;
 }
 
 div.imac {
@@ -147,4 +150,244 @@ div.macbooks {
   float: right;
 
   margin-top: -300px;
+}
+
+div.footer img {
+  bottom: 0;
+  left: 0;
+
+  width: 100vw;
+}
+
+@media (max-width: 767px) {
+  div.imac {
+    margin: 0;
+  }
+
+  div.imac img {
+    width: 300px;
+    padding-top: 50px;
+  }
+
+  div.scenario img, div.phonemockup img {
+    width: 200px;
+  }
+
+  div.script img, div.cards img, div.interface img, div.macbooks img {
+    overflow: hidden;
+
+    width: 300px;
+  }
+
+  div.footer img {
+    width: 100vw;
+  }
+
+  h1 {
+    width: 300px;
+    margin-top: 100px;
+    margin-left: 0;
+
+    font-size: 48px;
+    font-weight: bold;
+    line-height: 100.6%;
+  }
+
+  h2 {
+    width: 300px;
+
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 110.6%;
+  }
+
+  p {
+    width: 300px;
+
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 19px;
+  }
+
+  p.semibold {
+    width: 300px;
+    margin-left: 0;
+
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 100.6%;
+  }
+
+  div.start, div.end {
+    display: flex;
+    flex-direction: column;
+
+    margin-left: 0px;
+
+    align-items: center;
+    justify-content: center;
+  }
+
+  div.star img {
+    width: 35px;
+  }
+
+  div.stars1 img {
+    width: 100px;
+  }
+
+  div.stars2 img {
+    width: 150px;
+  }
+
+  div.interfacepic img {
+    width: 95vw;
+  }
+
+  div.macbooks img {
+    padding-top: 350px;
+    padding-bottom: 50px;
+  }
+
+  div.immerse, div.mobileapp {
+    display: flex;
+    float: none;
+    flex-direction: column-reverse;
+
+    margin-top: 0;
+    margin-right: 0;
+    margin-left: 0;
+    padding-top: 50px;
+
+    align-items: center;
+    justify-content: center;
+  }
+
+  div.comfortable, div.margins, div.remember, div.interface {
+    display: flex;
+    flex-direction: column;
+
+    margin: 0;
+    padding-top: 100px;
+
+    align-items: center;
+    justify-content: center;
+  }
+
+  button {
+    margin-left: 0;
+    padding: 10px 30px;
+
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+  div.scenario, div.phonemockup {
+    margin-right: 0;
+  }
+
+  div.textcenter, div.text {
+    width: 300px;
+  }
+}
+
+@media (min-width: 768px) {
+  h1 {
+    width: 600px;
+    margin-top: 100px;
+    margin-left: 0;
+
+    font-size: 68px;
+    font-weight: bold;
+    line-height: 100.6%;
+  }
+
+  h2 {
+    width: 300px;
+
+    font-size: 28px;
+    font-weight: bold;
+    line-height: 110.6%;
+  }
+
+  p {
+    width: 300px;
+
+    font-size: 18px;
+    font-weight: normal;
+    line-height: 19px;
+  }
+
+  p.semibold {
+    width: 600px;
+    margin-left: 0;
+
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 100.6%;
+  }
+
+  div.imac {
+    position: absolute;
+
+    margin: 0;
+    margin-top: -150px;
+  }
+
+  div.immerse {
+    margin-top: 500px;
+  }
+
+  div.imac img {
+    width: 700px;
+    padding-top: 0;
+  }
+
+  button {
+    margin-left: 0;
+    padding: 10px 30px;
+
+    font-size: 22px;
+  }
+
+  div.start, div.end {
+    margin-left: 25px;
+
+    align-items: center;
+    justify-content: center;
+  }
+
+  div.scenario img, div.phonemockup img {
+    width: 300px;
+  }
+
+  div.script img, div.cards img, div.interface img, div.macbooks img {
+    overflow: hidden;
+
+    width: 500px;
+  }
+
+  div.macbooks img {
+    padding-top: 250px;
+    padding-bottom: 50px;
+  }
+
+  div.text {
+    width: inherit;
+}
+
+div.comfortable, div.margins, div.remember, div.interface {
+  display: flex;
+  flex-direction: column;
+
+  margin: 0;
+  padding-top: 100px;
+
+  align-items: center;
+  justify-content: center;
+}
+
+div.textcenter {
+  width: 300px;
+}
 }
